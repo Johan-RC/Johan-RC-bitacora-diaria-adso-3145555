@@ -17,3 +17,8 @@ Consulta [revisiones.md](revisiones.md) para el estado de PR y las validaciones 
 ## Asistencia de inteligencia artificial
 
 Codex ayudó a organizar y redactar estas entradas a partir de registros de trabajo y confirmaciones de Johan. Las entradas distinguen el trabajo realizado con asistencia de IA y los aportes personales confirmados por Johan.
+
+## Plan maestro de actividades
+
+Consulta [plan-maestro-actividades.md](plan-maestro-actividades.md) para el cuadro de tareas individuales de Johan, evidencias requeridas, obligatoriedad, estado conocido y fechas de control.
+
