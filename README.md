@@ -1,6 +1,10 @@
 # Bitácora diaria — ADSO-3145555
 
-Repositorio destinado exclusivamente a las entradas diarias de Johan Steven Rodriguez Charry para el plan de mejoramiento de la ficha ADSO-3145555.
+Repositorio para las entradas diarias de Johan Steven Rodriguez Charry y el seguimiento de revisiones del plan de mejoramiento de la ficha ADSO-3145555. `revisiones.md` organiza las revisiones pendientes; no envía solicitudes por sí mismo.
+
+## Seguimiento de revisiones
+
+Consulta [revisiones.md](revisiones.md) para el estado de PR y las validaciones de pares pendientes.
 
 ## Criterio de registro
 
