@@ -11,11 +11,11 @@
 ## P-J5 — Modelo STRIDE de federación
 
 - Repositorio: `code-sena/design-software-web-shell`.
-- Artefacto local: `P-J5-STRIDE-federation.md`, rama `recovery/2026-11-23-pj4-pj5-evidence`.
-- Revisión técnica solicitada al grupo cuando el instructor lo autorice: validar la allowlist de remotes/orígenes, CSP e integridad/procedencia de artefactos, límites de carga/fallback y autorización en APIs.
-- El criterio del plan exige dos aprobaciones de compañeros que no sean coautores y CI verde. No se ha abierto PR ni enviado solicitud de revisión; Johan consultará primero al instructor, como acordó.
+- PR: [#49 — evidencia P-J4 y borrador P-J5](https://github.com/code-sena/design-software-web-shell/pull/49), rama `recovery/2026-11-23-pj4-pj5-evidence` hacia `develop`.
+- Revisión técnica a solicitar cuando el instructor lo autorice: validar allowlist de remotes/orígenes, CSP y procedencia de artefactos, límites de carga/fallback y autorización en APIs.
+- CI inicial: navegador aprobado; despliegue E5 omitido; ESLint falló por globals de Node/browser no declarados en el script P-J4. La configuración se corrigió localmente y lint pasa; falta publicar la corrección y repetir CI. El plan requiere dos aprobaciones de compañeros no coautores. No se han solicitado revisores, conforme al acuerdo de consultar primero al instructor.
 ## P-J4 — Métricas de web-shell
 
-- Repositorio: `code-sena/design-software-web-shell`; rama local `recovery/2026-11-23-pj4-pj5-evidence`, destino previsto `develop`.
+- Repositorio: `code-sena/design-software-web-shell`; evidencia incluida en el PR [#49](https://github.com/code-sena/design-software-web-shell/pull/49) hacia `develop`.
 - Evidencia local: `evidence/pj4/P-J4-web-vitals-2026-11-23.md`, `results.json`, script y capturas. Mediana de laboratorio con mocks: LCP 248 ms, INP 24 ms y CLS 0.01172; no representa un MFE real ni tráfico de producción.
-- Pendiente integrar mediante PR, CI verde y dos aprobaciones de compañeros no coautores. Antes de enviar solicitudes se mantiene el acuerdo de consultar al instructor.
+- La prueba del navegador pasó; el CI está parcialmente bloqueado por el ESLint del script, ya corregido localmente pero aún no publicado. Para el cierre faltan nuevo CI verde y dos aprobaciones de compañeros no coautores; las solicitudes quedan en espera de consultar al instructor.
