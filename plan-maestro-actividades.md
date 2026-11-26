@@ -4,7 +4,7 @@
 **Ficha:** ADSO-3145555  
 **Periodo del plan:** 14 de noviembre al 4 de diciembre de 2026  
 **Entrega y sustentación:** 5 de diciembre de 2026  
-**Corte de este estado:** 25 de noviembre de 2026
+**Corte de este estado:** 26 de noviembre de 2026
 
 ## Cómo usar este cuadro
 
@@ -26,7 +26,7 @@ Los documentos fuente no asignan una tarea diferente a cada día. La distribuci�
 | P-J3 | Fusionar frontend-platform PR #12 en `develop`. | PR fusionado, CI verde y dos aprobaciones válidas. | Sí (O) | Revalidar el PR #12 y las aprobaciones antes del próximo control. |
 | P-J4 | Medir y registrar en `develop` los Core Web Vitals de web-shell: LCP, INP y CLS. | Informe con tres corridas, valores, comando reproducible y PR fusionado en `develop`. | No | Hay tres mediciones de laboratorio y reporte en PR #49. CI #72 pasó; el PR sigue abierto y la evidencia aún no está integrada en `develop`. El remote usado es simulado, no producción. |
 | P-J5 | Elaborar el modelo de amenazas STRIDE de la federación y dejarlo en `develop`. | Documento con amenazas, mitigaciones y responsables, validado técnicamente y fusionado en `develop`. | No | Borrador en PR #49; falta validación técnica y fusión. PR sin revisiones todavía. |
-| P-J6 | Activar Content-Security-Policy y comprobar que una prueba automatizada falla si se elimina. | Política activa, prueba de regresión y ejecución visible en CI. | No | Verificar implementación y evidencia en los repositorios. |
+| P-J6 | Activar Content-Security-Policy y comprobar que una prueba automatizada falla si se elimina. | Política activa, prueba de regresión y ejecución visible en CI. | No | PR #50 abierto hacia `develop`; commit `3c55ee9` firmado y rama publicada. Pruebas locales correctas; CI remoto pendiente y aún no integrado en `develop`. Evidencia en la bitácora del 26/11. |
 | P-J7 | Ejecutar regresión visual y presupuesto de tamaño. | Pruebas conectadas al CI y corrida verde con resultados reproducibles. | No | Verificar implementación y evidencia en los repositorios. |
 | P-J8 | Explicar por escrito los cuatro archivos de actividades idénticos detectados en el caso SomnGuard. | Informe de autoría sustentado con evidencia y explicación en vivo de un caso elegido por el instructor. | Sí (O) | Verificar que el informe esté entregado y que la sustentación quede pendiente/realizada según evidencia. |
 
@@ -36,7 +36,7 @@ Los documentos fuente no asignan una tarea diferente a cada día. La distribuci�
 |---|---|---|---|---|
 | S1 | Levantar el sistema desde cero usando únicamente el manual de instalación y `.env.example`, sin cambiar código. | Procedimiento reproducible y demostración en vivo ante los instructores. | Sí (O) | La instalación local se levantó y verificó; falta la demostración en vivo. |
 | S2 | Ingresar con cada rol declarado usando cuentas de prueba documentadas. | Cuentas de prueba autorizadas/documentadas y evidencia de acceso para cada rol. | Sí (O) | Pendiente: no había cuentas de prueba verificables ni se probó el login. No inventar credenciales. |
-| S3 | Verificar los flujos principales desde la pantalla hasta la base de datos. | Recorrido con datos guardados y visibles, sin datos inventados ni funciones simuladas. | Sí (O) | Pendiente de evidencia de flujo real de extremo a extremo; el levantamiento local por sí solo no lo acredita. |
+| S3 | Verificar los flujos principales desde la pantalla hasta la base de datos. | Recorrido con datos guardados y visibles, sin datos inventados ni funciones simuladas. | Sí (O) | Servicios locales levantados y health check UP el 26/11, pero la base solo tiene roles y no usuarios de prueba; aún no se completó un recorrido UI→PostgreSQL. El formulario requiere aceptación de términos; pendiente cuenta de prueba autorizada. |
 | S4 | Comprobar estabilidad ante errores y caídas parciales. | Pruebas de token inválido (401), petición mala (400 sin trazas), listas vacías, rutas protegidas y servicio caído sin tumbar los demás. | No | Verificar evidencia de pruebas por cada caso. |
 | S5 | Alcanzar cobertura de pruebas unitarias de al menos 70% por repositorio y CI verde. | Reportes de cobertura por repositorio y ejecuciones verdes. | No | Verificar reportes actuales y enlazarlos. |
 | S6 | Evitar secretos expuestos en código o historial. | Revisión de archivos y del historial de repositorios, sin contraseñas ni claves expuestas. | No | Verificar al corte final; no registrar secretos en la bitácora. |

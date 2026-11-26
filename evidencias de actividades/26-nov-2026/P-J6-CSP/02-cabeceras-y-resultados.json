@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-26",
+  "origin": "http://127.0.0.1:18081",
+  "httpStatus": 200,
+  "title": "SENA — Gestion de Horarios",
+  "contentSecurityPolicy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+  "manualChecks": [
+    "root 200",
+    "manifest 200",
+    "missing asset 404"
+  ],
+  "browserScreenshot": "01-web-shell-bajo-CSP.png"
+}
