@@ -1,7 +1,7 @@
 # Evidencia S3 — SomnGuard: edge local sin sincronización
 
 **Fecha de verificación:** 26 de noviembre de 2026 (America/Bogota)
-**Resultado:** S3 sigue incompleta; esta evidencia registra una sesión real del portal y una ejecución local del edge.
+**Resultado inicial:** esta evidencia registra la sesión del portal y la primera ejecución local del edge, antes del aprovisionamiento backend. La continuación real y el cierre técnico están en `04-flujo-backend-portal-postgresql.md`.
 
 ## Evidencia visual
 
@@ -32,8 +32,8 @@ Consulta de conteos sin extraer correos, nombres, contraseñas ni tokens:
 | `telemetry_service.event` | 0 |
 | `telemetry_service.evidence` | 0 |
 
-## Conclusión y paso requerido
+## Conclusión de la etapa inicial
 
 El edge local detectó eventos reales del pipeline y los guardó en su cola SQLite offline, pero el portal y PostgreSQL siguen vacíos. Por ello no se verificó un recorrido de extremo a extremo hasta datos persistidos y visibles en el backend y no corresponde declarar S3 cerrada.
 
-Para continuar, administración debe emitir un token de aprovisionamiento para el edge local o registrar el dispositivo manualmente, y entregar el código de reclamo. Después se debe vincular desde la cuenta de prueba, iniciar el edge en modo backend, generar una detección, comprobarla en el portal y contrastar su persistencia en PostgreSQL. No se sustituyó esa evidencia con datos simulados.
+En esta etapa inicial no había recorrido de extremo a extremo. La etapa siguiente completó el aprovisionamiento, el reclamo y la sincronización real; consulta `04-flujo-backend-portal-postgresql.md`. No se sustituyó la evidencia con datos simulados.

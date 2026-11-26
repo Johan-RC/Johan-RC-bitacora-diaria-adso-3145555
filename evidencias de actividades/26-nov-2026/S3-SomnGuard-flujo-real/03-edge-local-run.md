@@ -19,3 +19,7 @@
 Esto demuestra que este computador puede funcionar como edge de desarrollo y que el pipeline guarda detecciones localmente. No demuestra sincronización edge→API→PostgreSQL→portal. El flujo backend requiere un token de aprovisionamiento emitido por admin o un alta manual de admin, y luego el reclamo/asignación del dispositivo.
 
 No se copiaron imágenes ni video de la cámara a la bitácora.
+
+## Continuación del flujo
+
+Este archivo documenta únicamente la primera ejecución local sin backend. La continuación con aprovisionamiento, reclamo, sincronización, registros PostgreSQL y visibilidad en el portal se documenta en `04-flujo-backend-portal-postgresql.md`; por ello, la conclusión de esta primera etapa no describe el estado final de S3.
