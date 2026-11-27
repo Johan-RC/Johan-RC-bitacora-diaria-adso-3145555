@@ -1,8 +1,8 @@
 # P-J7 — Regresión visual y presupuesto de compilación
 
-**Fecha de trabajo:** 26 de noviembre de 2026  
-**Repositorio:** `code-sena/design-software-web-shell`  
-**Rama local:** `recovery/2026-11-26-pj7-visual-budget`
+**Fecha de trabajo:** 26 de noviembre de 2026
+**Repositorio:** `code-sena/design-software-web-shell`
+**Rama:** `recovery/2026-11-26-pj7-visual-budget`
 
 ## Evidencia archivada
 
@@ -14,8 +14,9 @@
 - `node scripts/check-bundle-budget.mjs`: correcto; JavaScript 316.225/350.000 bytes y CSS 22.204/25.000 bytes.
 - `npm run typecheck:e2e`: correcto.
 - ESLint focalizado en la prueba, el script de presupuesto y `vite.config.ts`: correcto.
-- Ejecución de la prueba visual durante la generación de la referencia: 1/1 correcta.
+- Prueba visual al generar la referencia: 1/1 correcta; comparación posterior contra la referencia: 1/1 correcta.
+- GitHub Actions [CI #76](https://github.com/code-sena/design-software-web-shell/actions/runs/45940714615): chequeos estáticos/unitarios y pruebas de navegador/regresión visual terminaron correctamente; el `remote-smoke` manual quedó omitido.
 
 ## Estado y límite
 
-P-J7 sigue en curso. El commit firmado `b3ac09c` está publicado en `recovery/2026-11-26-pj7-visual-budget`; el [PR #51](https://github.com/code-sena/design-software-web-shell/pull/51) está abierto hacia `develop`, con revisiones solicitadas a `ariel5253`, `cjsarasty456` y `javierpintod`. El CI #76 está en ejecución. La imagen es una referencia y evidencia de ejecución local; no representa una corrida verde de GitHub Actions.
+P-J7 está completada técnicamente y queda a espera de revisión/aprobación e integración. El commit firmado `b3ac09c` está publicado; el [PR #51](https://github.com/code-sena/design-software-web-shell/pull/51) está abierto hacia `develop`, con revisiones solicitadas a `ariel5253`, `cjsarasty456` y `javierpintod`. La imagen es una referencia y evidencia de ejecución local; la corrida verde de CI #76 se documenta en el enlace anterior.
