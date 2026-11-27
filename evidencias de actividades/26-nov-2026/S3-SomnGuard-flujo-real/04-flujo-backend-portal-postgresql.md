@@ -33,11 +33,19 @@ Consulta de solo lectura sobre las tablas del entorno local, sin extraer seriale
 
 El conteo de 26 eventos en PostgreSQL coincide con el total visible en el portal durante la verificación. Esto demuestra persistencia y lectura desde la interfaz, no una maqueta ni datos sintéticos.
 
+## Capturas del portal aportadas por el aprendiz
+
+- [05 — Historial con 26 eventos](05-historial-eventos-26.png): confirma el total visible y muestra eventos recientes del dispositivo.
+- [06 — Detalle de evento sin evidencia](06-detalle-evento-sin-evidencia.png): detalle de `Error cámara/obstrucción`, con evidencia no disponible.
+- [07 — Detalle de evento con evidencia](07-detalle-evento-con-evidencia.png): detalle de `Cierre prolongado ojos`, con evidencia disponible visible en el portal.
+
+Las capturas se recibieron del aprendiz y se conservaron sin edición. Las etiquetas son resultados del software y no constituyen un diagnóstico médico ni una evaluación de conducción.
+
 ## Protección de evidencia y alcance
 
-- El token de aprovisionamiento fue de un solo uso y quedó consumido; el código de reclamo se usó para vincular la cuenta. No se incluyen credenciales ni identificadores del dispositivo en este archivo.
-- Los 7 objetos de evidencia permanecen en el almacenamiento local de SomnGuard. No se copiaron al repositorio fotos, cuadros de cámara ni videos.
-- La captura aportada previamente por el aprendiz muestra la sesión inicial, no este resultado final. La vista final se inspeccionó en el portal, pero no se archivó una nueva captura PNG; este archivo conserva los resultados agregados verificados y no usa una imagen sustitutiva.
+- El token de aprovisionamiento fue de un solo uso y quedó consumido; el código de reclamo se usó para vincular la cuenta. No se incluyen contraseñas, tokens, códigos de reclamo ni claves.
+- Los 7 objetos de evidencia permanecen en el almacenamiento local de SomnGuard. No se extrajeron objetos multimedia por separado; la captura 07, aportada por el aprendiz, muestra el fotograma asociado dentro del portal.
+- La captura 01 corresponde a la sesión inicial. Las capturas 05–07 documentan el historial final y dos detalles de eventos. Las capturas muestran los identificadores de evento/dispositivo que la propia interfaz presenta.
 - El aviso previo de almacenamiento al 97% y purga fallida queda fuera de S3 y requiere revisión dentro de S4/estabilidad.
 - La evidencia acredita la prueba técnica local. No afirma que los instructores la hayan revisado o aceptado formalmente.
 
